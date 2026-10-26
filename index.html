@@ -163,79 +163,69 @@
             </div>
           </div>
 
-          <!-- Hero Showcase: Real-time Clinical Telemetry Preview -->
+          <!-- Hero 3D Interactive Masterpiece Stage -->
           <div class="hero-showcase">
-            <div class="showcase-frame">
+            <div class="hero-3d-card-frame">
               
-              <div class="showcase-header">
+              <!-- 3D Stage Top HUD -->
+              <div class="hero-3d-header">
                 <div>
-                  <span class="mono" style="font-size: 0.75rem; color: var(--color-brand-secondary); font-weight: 600;">OPERATORY SUITE 01 &bull; LIVE DIAGNOSTIC FEED</span>
-                  <h4 style="font-size: 1rem; margin-top: 2px;">3D Intraoral Arch Mapping</h4>
+                  <div class="hero-3d-live-indicator">
+                    <span class="rec-blinking-dot"></span>
+                    <span>LIVE 3D DENTAL ANATOMY</span>
+                  </div>
+                  <h4 style="font-size: 0.9375rem; color: #FFFFFF; margin-top: 2px;">Interactive Operatory Suite 01</h4>
                 </div>
-                <span class="badge badge-teal">20-Micron Precision</span>
+                <span class="badge" style="background: rgba(46, 229, 157, 0.15); color: #2EE59D; border: 1px solid rgba(46, 229, 157, 0.3); font-size: 0.6875rem;">
+                  20-Micron Precision
+                </span>
               </div>
 
-              <div class="showcase-scanner-view">
-                <div class="scanner-badge-overlay">
-                  <span class="status-dot"></span>
-                  <span>OPTICAL SCAN COMPLETE</span>
+              <!-- 3D Canvas Stage -->
+              <div class="hero-3d-canvas-wrapper">
+                <div id="hero-3d-canvas-box"></div>
+
+                <!-- Floating 3D Telemetry Tags -->
+                <div class="hero-3d-tag tag-top-right">
+                  <span class="mono">OPTICAL SENSORS</span>
+                  <span class="v">1,000,000 pts/s</span>
                 </div>
 
-                <!-- Custom Anatomical Arch Vector -->
-                <div class="scanner-graphic">
-                  <svg viewBox="0 0 300 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Dental arch curve -->
-                    <path d="M40 115 C 45 40, 110 15, 150 15 C 190 15, 255 40, 260 115" stroke="#268573" stroke-width="3" stroke-dasharray="6 4"/>
-                    <!-- Individual mapped teeth nodes -->
-                    <rect x="42" y="100" width="18" height="18" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="62" y="80" width="16" height="17" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="85" y="60" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="110" y="42" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="135" y="32" width="14" height="16" rx="4" fill="#BD8E44" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="151" y="32" width="14" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="175" y="42" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="200" y="60" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="222" y="80" width="16" height="17" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <rect x="240" y="100" width="18" height="18" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
-                    <!-- Occlusal contact indicator callout -->
-                    <circle cx="142" cy="40" r="16" stroke="#BD8E44" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
-                    <text x="142" y="75" font-family="monospace" font-size="9" fill="#12221F" text-anchor="middle" font-weight="600">Tooth #21: Intact</text>
+                <div class="hero-3d-tag tag-bottom-left">
+                  <span class="mono">STERILIZATION AUDIT</span>
+                  <span class="v">Class-B Pass #8492</span>
+                </div>
+
+                <!-- 360 Drag Hint Pill -->
+                <div class="hero-3d-drag-pill">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
                   </svg>
-                </div>
-
-                <div class="scanner-metrics-grid">
-                  <div class="scanner-metric-pill">
-                    <span class="label">Impression Goo</span>
-                    <span class="value">0% (All Digital)</span>
-                  </div>
-                  <div class="scanner-metric-pill">
-                    <span class="label">Scan Duration</span>
-                    <span class="value">3.8 Mins Full Arch</span>
-                  </div>
+                  <span>360&deg; Drag to Orbit Model</span>
                 </div>
               </div>
 
-              <!-- Clinician In-Charge Row -->
-              <div class="showcase-footer">
+              <!-- 3D Mode Selector Buttons -->
+              <div class="hero-3d-controls-strip">
+                <button type="button" class="hero-3d-mode-btn active" data-mode="natural">Natural Ceramic</button>
+                <button type="button" class="hero-3d-mode-btn" data-mode="wireframe">3D Laser Mesh</button>
+                <button type="button" class="hero-3d-mode-btn" data-mode="xray">X-Ray Pulp Canal</button>
+                <button type="button" class="hero-3d-mode-btn" data-mode="implant">Guided Implant</button>
+                <button type="button" class="hero-3d-mode-btn" data-mode="explode">Explode 3D</button>
+              </div>
+
+              <!-- Clinician Footer -->
+              <div class="hero-3d-footer">
                 <div class="showcase-doctor-info">
-                  <div class="doctor-avatar-badge">MS</div>
+                  <div class="doctor-avatar-badge" style="background: #268573;">MS</div>
                   <div class="doctor-meta">
-                    <h6>Dr. Mayra Sharma, MDS</h6>
-                    <p>Endodontics &amp; Micro-Dentistry &bull; 14 Yrs</p>
+                    <h6 style="color: #FFFFFF;">Dr. Mayra Sharma, MDS</h6>
+                    <p style="color: #8AA8A1;">Micro-Endodontist &bull; 14 Yrs Practice</p>
                   </div>
                 </div>
-                <span class="badge badge-outline" style="font-size: 0.6875rem; background: #FFFFFF;">On-Duty Today</span>
-              </div>
-
-              <!-- Floating Real Verification Pill -->
-              <div class="floating-verification">
-                <div class="verification-icon">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </div>
-                <div>
-                  <div class="verification-text">Sterilization Pass #8492</div>
-                  <div class="verification-sub">Class-B Vacuum Cycle Verified</div>
-                </div>
+                <span class="badge" style="background: rgba(46, 213, 115, 0.2); color: #2ED573; border: 1px solid rgba(46, 213, 115, 0.3); font-size: 0.6875rem;">
+                  On-Duty Today
+                </span>
               </div>
 
             </div>
@@ -277,117 +267,6 @@
           </div>
 
         </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CINEMATIC 3D OPERATORY: FILM SCROLL EXPERIENCE
-         ========================================================================== -->
-    <section class="cinematic-film-section" id="cinematic-3d-viewport">
-      <div class="container">
-        
-        <div class="film-intro-block">
-          <span class="section-tagline" style="background: rgba(38, 133, 115, 0.2); color: #2EE59D; border-color: rgba(46, 229, 157, 0.3);">
-            Interactive 3D Operatory &bull; Film Scroll Engine
-          </span>
-          <h2>A cinematic journey into microscopic oral medicine.</h2>
-          <p>
-            Experience dental anatomy at sub-millimeter precision. Scroll downward to transition through diagnostic optical mapping, endodontic canal preservation, and monolithic ceramic restoration.
-          </p>
-        </div>
-
-        <!-- Anamorphic Letterboxed Frame -->
-        <div class="film-viewport-frame">
-          
-          <!-- Top Film Letterbox Strip -->
-          <div class="film-letterbox-bar">
-            <div class="film-rec-indicator">
-              <span class="rec-blinking-dot"></span>
-              <span>LIVE OPERATORY TELEMETRY</span>
-            </div>
-            <div class="film-timecode-display">
-              <span id="film-scene-indicator">ACT I // ENAMEL BIOMIMETICS</span> &bull; 
-              <span id="film-timecode">TC 00:00:14:08</span>
-            </div>
-            <div class="film-aspect-ratio-badge">
-              2.39:1 CINEMATIC SCOPE &bull; 60 FPS WEBGL
-            </div>
-          </div>
-
-          <!-- 3D Interactive Canvas Stage -->
-          <div class="film-canvas-stage">
-            <div id="cinema-3d-canvas-box"></div>
-
-            <!-- Left HUD Chapter Markers -->
-            <div class="film-hud-chapters">
-              <div class="film-chapter-step active">
-                <span class="chapter-pip"></span>
-                <span>01 // NATURAL ENAMEL</span>
-              </div>
-              <div class="film-chapter-step">
-                <span class="chapter-pip"></span>
-                <span>02 // 3D OPTICAL SCAN</span>
-              </div>
-              <div class="film-chapter-step">
-                <span class="chapter-pip"></span>
-                <span>03 // CANAL PRESERVATION</span>
-              </div>
-              <div class="film-chapter-step">
-                <span class="chapter-pip"></span>
-                <span>04 // PRECISION RESTORATION</span>
-              </div>
-            </div>
-
-            <!-- Right HUD Telemetry Box -->
-            <div class="film-hud-telemetry">
-              <div class="telemetry-row">
-                <span class="k">OPTICAL TOLERANCE:</span>
-                <span class="v">&plusmn;20 &mu;m</span>
-              </div>
-              <div class="telemetry-row">
-                <span class="k">SCAN SPEED:</span>
-                <span class="v">1,000,000 pts/s</span>
-              </div>
-              <div class="telemetry-row">
-                <span class="k">FLEXURAL DENSITY:</span>
-                <span class="v">500 MPa</span>
-              </div>
-              <div class="telemetry-row">
-                <span class="k">SPECTRUM:</span>
-                <span class="v">470 nm Blue Light</span>
-              </div>
-            </div>
-
-            <!-- Center Drag Helper Pill -->
-            <div class="film-drag-hint">
-              <svg class="drag-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
-              </svg>
-              <span>360&deg; Drag to Orbit Anatomical Model</span>
-            </div>
-
-          </div>
-
-          <!-- Bottom Controls & Soundscape Bar -->
-          <div class="film-controls-bar">
-            <div class="film-mode-buttons">
-              <button type="button" class="mode-btn active" data-mode="natural">Natural Ceramic</button>
-              <button type="button" class="mode-btn" data-mode="wireframe">3D Laser Mesh</button>
-              <button type="button" class="mode-btn" data-mode="xray">X-Ray Pulp Canal</button>
-              <button type="button" class="mode-btn" data-mode="implant">Guided Implant</button>
-              <button type="button" class="mode-btn" data-mode="explode">Explode Layers</button>
-            </div>
-
-            <div>
-              <button type="button" class="cinema-audio-toggle" style="background: rgba(255,255,255,0.08); border-color: var(--color-border-dark); color: #B2CCC6;">
-                <span class="audio-wave-bars is-muted"><i></i><i></i><i></i><i></i></span>
-                <span>Audio Ambience: OFF</span>
-              </button>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </section>
 

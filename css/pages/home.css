@@ -1005,3 +1005,161 @@
     align-items: stretch;
   }
 }
+
+
+/* ==========================================================================
+   FOCUSED HERO 3D MASTERPIECE STYLES (HOME PAGE HERO)
+   ========================================================================== */
+.hero-3d-card-frame {
+  background: radial-gradient(circle at top right, #0F2F29 0%, #071916 100%);
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(46, 229, 157, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-3d-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: var(--space-3);
+}
+
+.hero-3d-live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family-mono);
+  font-size: 0.6875rem;
+  color: #2EE59D;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.hero-3d-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: clamp(340px, 42vw, 420px);
+  border-radius: var(--radius-md);
+  background: radial-gradient(circle at center, #0B332B 0%, #051412 100%);
+  border: 1px solid rgba(46, 229, 157, 0.15);
+  overflow: hidden;
+  cursor: grab;
+}
+
+.hero-3d-canvas-wrapper:active {
+  cursor: grabbing;
+}
+
+#hero-3d-canvas-box {
+  width: 100%;
+  height: 100%;
+}
+
+/* Floating 3D Telemetry Overlay Tags */
+.hero-3d-tag {
+  position: absolute;
+  background: rgba(5, 20, 17, 0.85);
+  border: 1px solid rgba(46, 229, 157, 0.25);
+  backdrop-filter: blur(6px);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.6875rem;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.hero-3d-tag span.mono {
+  font-family: var(--font-family-mono);
+  font-size: 0.625rem;
+  color: #8AA8A1;
+}
+
+.hero-3d-tag span.v {
+  font-family: var(--font-family-mono);
+  font-weight: 700;
+  color: #2EE59D;
+}
+
+.tag-top-right {
+  top: 12px;
+  right: 12px;
+}
+
+.tag-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+/* 360 Drag Hint Pill in Hero */
+.hero-3d-drag-pill {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(5, 20, 17, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  border-radius: var(--radius-full);
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family-mono);
+  font-size: 0.625rem;
+  color: #B2CCC6;
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* Hero Mode Buttons Strip */
+.hero-3d-controls-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.hero-3d-mode-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #B2CCC6;
+  border-radius: var(--radius-full);
+  padding: 5px 11px;
+  font-family: var(--font-family-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.hero-3d-mode-btn:hover {
+  background: rgba(46, 229, 157, 0.12);
+  color: #FFFFFF;
+  border-color: #2EE59D;
+}
+
+.hero-3d-mode-btn.active {
+  background: #268573;
+  color: #FFFFFF;
+  border-color: #2EE59D;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(46, 229, 157, 0.35);
+}
+
+.hero-3d-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
