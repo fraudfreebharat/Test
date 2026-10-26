@@ -1021,6 +1021,88 @@ p.lead {
 .card, .pricing-card, .service-card, .principle-card, .showcase-frame {
   transform-style: preserve-3d;
   will-change: transform;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- CUSTOM OPTIC CROSSHAIR CURSOR --- */
+.cinema-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-brand-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate3d(-100px, -100px, 0);
+  margin-top: -3px;
+  margin-left: -3px;
+  transition: opacity 200ms ease;
+}
+
+.cinema-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid rgba(10, 74, 69, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate3d(-100px, -100px, 0);
+  margin-top: -16px;
+  margin-left: -16px;
+  transition: width 240ms cubic-bezier(0.16, 1, 0.3, 1), 
+              height 240ms cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 200ms ease, 
+              background-color 200ms ease;
+}
+
+.cinema-cursor-ring.is-hovered {
+  width: 52px;
+  height: 52px;
+  margin-top: -26px;
+  margin-left: -26px;
+  border-color: var(--color-brand-secondary);
+  background-color: rgba(38, 133, 115, 0.1);
+}
+
+.cinema-cursor-ring.is-3d-orbit {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border: 2px dashed #268573;
+}
+
+/* --- SPECULAR SHEEN OVERLAY --- */
+.cinema-specular-sheen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+  transition: background 60ms linear;
+}
+
+/* --- SCROLL REVEAL STYLES --- */
+.cinema-reveal-ready {
+  opacity: 0;
+  transform: translateY(28px) scale(0.98);
+  transition: opacity 650ms cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 650ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.cinema-reveal-ready.cinema-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* --- 13. RESPONSIVE BREAKPOINTS --- */
