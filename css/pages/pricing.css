@@ -1,0 +1,292 @@
+/* ==========================================================================
+   MAYRA DENTAL CARE — PRICING PAGE STYLESHEET (CSS/PAGES/PRICING.CSS)
+   Cadence Switcher, Tier Cards, Transparent Rate Card & Comparison Matrix
+   ========================================================================== */
+
+/* --- 1. PRICING HERO --- */
+.pricing-hero {
+  background-color: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-top: clamp(3rem, 5vw, var(--space-16));
+  padding-bottom: clamp(3.5rem, 5vw, var(--space-16));
+}
+
+.pricing-hero-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.pricing-hero-header h1 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.025em;
+}
+
+.pricing-hero-header p {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-8);
+}
+
+/* Switcher Control */
+.pricing-switch-container {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  background-color: var(--color-canvas-alt);
+  border: 1px solid var(--color-border-medium);
+  padding: 6px;
+  border-radius: var(--radius-full);
+}
+
+.switch-btn {
+  padding: 8px 18px;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.switch-btn.active {
+  background-color: var(--color-surface);
+  color: var(--color-brand-primary);
+  box-shadow: var(--shadow-subtle);
+}
+
+.discount-pill {
+  font-family: var(--font-family-mono);
+  font-size: 0.6875rem;
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+}
+
+/* --- 2. MEMBERSHIP TIERS GRID --- */
+.tiers-section {
+  background-color: var(--color-canvas-alt);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  align-items: stretch;
+}
+
+.pricing-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.5rem, 3vw, var(--space-8));
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.pricing-card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-card);
+}
+
+.pricing-card--popular {
+  border: 2px solid var(--color-brand-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.popular-ribbon {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-brand-primary);
+  color: #FFFFFF;
+  font-family: var(--font-family-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+}
+
+.tier-name {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.tier-audience {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  line-height: 1.4;
+  margin-bottom: var(--space-5);
+  min-height: 34px;
+}
+
+.tier-price-box {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.tier-price {
+  font-family: var(--font-family-display);
+  font-size: clamp(2rem, 3vw, var(--font-size-4xl));
+  font-weight: 800;
+  color: var(--color-brand-primary);
+  line-height: 1;
+}
+
+.tier-cadence {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+.tier-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+  flex: 1;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: var(--font-size-xs);
+  line-height: 1.4;
+}
+
+.feature-item svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.feature-item.included svg {
+  color: var(--color-brand-secondary);
+}
+
+.feature-item.excluded {
+  color: var(--color-text-subtle);
+  opacity: 0.6;
+}
+
+.feature-item.excluded svg {
+  color: var(--color-border-strong);
+}
+
+/* --- 3. TRANSPARENT ITEMIZE RATE CARD --- */
+.rate-card-section {
+  background-color: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.rate-table-wrapper {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--font-size-sm);
+}
+
+.rate-table th {
+  background-color: var(--color-canvas-alt);
+  padding: 14px 20px;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border-medium);
+}
+
+.rate-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  vertical-align: top;
+}
+
+.rate-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rate-table tr:hover td {
+  background-color: var(--color-surface-hover);
+}
+
+.procedure-name {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.procedure-scope {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  margin-top: 2px;
+}
+
+.procedure-price {
+  font-family: var(--font-family-mono);
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  white-space: nowrap;
+}
+
+.procedure-warranty {
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--color-brand-secondary);
+}
+
+/* --- 4. PRICING FAQ ACCORDION --- */
+.faq-section {
+  background-color: var(--color-canvas-alt);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 1024px) {
+  .tiers-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .rate-table-wrapper {
+    overflow-x: auto;
+  }
+  .rate-table {
+    min-width: 640px;
+  }
+}

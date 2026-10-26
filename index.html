@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayra Dental Care | Precision & Restorative Dentistry in Gurugram</title>
+  <meta name="description" content="Doctor-led gentle dentistry in Gurugram. High-resolution 3D diagnostics, computer-assisted painless anesthesia, single-visit root canals, and upfront fixed pricing.">
+  
+  <!-- Typography Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Central Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body data-page="home">
+
+  <!-- ==========================================================================
+       GLOBAL HEADER (Loaded via Component Architecture)
+       ========================================================================== -->
+  <div data-component="header" data-loaded="true">
+    <div class="clinic-topbar" id="clinic-topbar">
+      <div class="container">
+        <div class="topbar-left">
+          <div class="topbar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Sector 42, Golf Course Road, Gurugram (Near Rapid Metro)</span>
+          </div>
+          <div class="topbar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Mon–Sat: 9:00 AM – 8:30 PM | Sun: 10:00 AM – 2:00 PM (Emergency)</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Emergency Desk: <a href="tel:+919810234421">+91 98102 34421</a></span>
+          </div>
+          <div class="topbar-status">
+            <button type="button" class="cinema-audio-toggle" style="background: rgba(255,255,255,0.08); border-color: var(--color-border-dark); color: #B2CCC6;">
+              <span class="audio-wave-bars is-muted"><i></i><i></i><i></i><i></i></span>
+              <span>Audio: OFF</span>
+            </button>
+            <span class="status-dot"></span>
+            <span>Open Today</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="container">
+        <div class="header-container">
+          <a href="index.html" class="brand-logo" aria-label="Mayra Dental Care Home">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3C11 3 6 6.5 6 12C6 16.5 8.5 21 11.5 26.5C12.5 28.5 14 29 15 26.5L16 23.5L17 26.5C18 29 19.5 28.5 20.5 26.5C23.5 21 26 16.5 26 12C26 6.5 21 3 16 3Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M16 9V17M12 13H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">Mayra Dental Care</span>
+              <span class="logo-tagline">Precision &amp; Restorative Dentistry</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="index.html" class="nav-link active" data-nav="home">Home</a>
+            <a href="about.html" class="nav-link" data-nav="about">About Clinic</a>
+            <a href="services.html" class="nav-link" data-nav="services">Treatments &amp; Services</a>
+            <a href="pricing.html" class="nav-link" data-nav="pricing">Transparent Pricing</a>
+            <a href="contact.html" class="nav-link" data-nav="contact">Contact &amp; Hours</a>
+          </nav>
+
+          <div class="header-actions">
+            <a href="tel:01244829900" class="header-phone-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>0124-482-9900</span>
+            </a>
+            <a href="contact.html#book" class="btn btn-primary btn-sm">
+              <span>Book Consultation</span>
+              <span class="btn-icon-wrapper" aria-hidden="true">&rarr;</span>
+            </a>
+            <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <div class="drawer-header">
+          <div class="logo-text">
+            <span class="logo-name" style="font-size: 1.15rem;">Mayra Dental</span>
+            <span class="logo-tagline">Clinical Precision</span>
+          </div>
+          <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <ul class="drawer-nav-list">
+          <li><a href="index.html" class="drawer-nav-link active" data-nav="home">Home <span>&rsaquo;</span></a></li>
+          <li><a href="about.html" class="drawer-nav-link" data-nav="about">About Clinic <span>&rsaquo;</span></a></li>
+          <li><a href="services.html" class="drawer-nav-link" data-nav="services">Treatments &amp; Services <span>&rsaquo;</span></a></li>
+          <li><a href="pricing.html" class="drawer-nav-link" data-nav="pricing">Transparent Pricing <span>&rsaquo;</span></a></li>
+          <li><a href="contact.html" class="drawer-nav-link" data-nav="contact">Contact &amp; Hours <span>&rsaquo;</span></a></li>
+        </ul>
+        <div class="drawer-footer">
+          <div class="topbar-item" style="color: var(--color-text-secondary); font-size: var(--font-size-xs);"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>Helpline: +91 98102 34421</span></div>
+          <a href="contact.html#book" class="btn btn-primary btn-block">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         HERO SECTION: Value Proposition & Clinical Showcase Card
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy Block -->
+          <div class="hero-copy">
+            <span class="section-tagline">Doctor-Led Oral Medicine &bull; Gurugram</span>
+            <h1 class="hero-headline">
+              Dental care without fear, guesswork, or <em>surprise bills</em>.
+            </h1>
+            <p class="hero-subtext">
+              High-resolution 3D diagnostics, computer-assisted painless anesthesia, and upfront fixed pricing before any treatment begins. Founded by hospital-trained oral specialists.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="contact.html#book" class="btn btn-primary btn-lg">
+                <span>Book Clinical Evaluation</span>
+                <span class="btn-icon-wrapper">&rarr;</span>
+              </a>
+              <a href="pricing.html" class="btn btn-secondary btn-lg">
+                <span>View Transparent Fee Schedule</span>
+              </a>
+            </div>
+
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>HDC Registered #HDC-D-4482</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Avg. Chair Wait: 12 Mins</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Class-B Vacuum Autoclave</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Showcase: Real-time Clinical Telemetry Preview -->
+          <div class="hero-showcase">
+            <div class="showcase-frame">
+              
+              <div class="showcase-header">
+                <div>
+                  <span class="mono" style="font-size: 0.75rem; color: var(--color-brand-secondary); font-weight: 600;">OPERATORY SUITE 01 &bull; LIVE DIAGNOSTIC FEED</span>
+                  <h4 style="font-size: 1rem; margin-top: 2px;">3D Intraoral Arch Mapping</h4>
+                </div>
+                <span class="badge badge-teal">20-Micron Precision</span>
+              </div>
+
+              <div class="showcase-scanner-view">
+                <div class="scanner-badge-overlay">
+                  <span class="status-dot"></span>
+                  <span>OPTICAL SCAN COMPLETE</span>
+                </div>
+
+                <!-- Custom Anatomical Arch Vector -->
+                <div class="scanner-graphic">
+                  <svg viewBox="0 0 300 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Dental arch curve -->
+                    <path d="M40 115 C 45 40, 110 15, 150 15 C 190 15, 255 40, 260 115" stroke="#268573" stroke-width="3" stroke-dasharray="6 4"/>
+                    <!-- Individual mapped teeth nodes -->
+                    <rect x="42" y="100" width="18" height="18" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="62" y="80" width="16" height="17" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="85" y="60" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="110" y="42" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="135" y="32" width="14" height="16" rx="4" fill="#BD8E44" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="151" y="32" width="14" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="175" y="42" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="200" y="60" width="15" height="16" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="222" y="80" width="16" height="17" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <rect x="240" y="100" width="18" height="18" rx="4" fill="#0A4A45" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <!-- Occlusal contact indicator callout -->
+                    <circle cx="142" cy="40" r="16" stroke="#BD8E44" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
+                    <text x="142" y="75" font-family="monospace" font-size="9" fill="#12221F" text-anchor="middle" font-weight="600">Tooth #21: Intact</text>
+                  </svg>
+                </div>
+
+                <div class="scanner-metrics-grid">
+                  <div class="scanner-metric-pill">
+                    <span class="label">Impression Goo</span>
+                    <span class="value">0% (All Digital)</span>
+                  </div>
+                  <div class="scanner-metric-pill">
+                    <span class="label">Scan Duration</span>
+                    <span class="value">3.8 Mins Full Arch</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clinician In-Charge Row -->
+              <div class="showcase-footer">
+                <div class="showcase-doctor-info">
+                  <div class="doctor-avatar-badge">MS</div>
+                  <div class="doctor-meta">
+                    <h6>Dr. Mayra Sharma, MDS</h6>
+                    <p>Endodontics &amp; Micro-Dentistry &bull; 14 Yrs</p>
+                  </div>
+                </div>
+                <span class="badge badge-outline" style="font-size: 0.6875rem; background: #FFFFFF;">On-Duty Today</span>
+              </div>
+
+              <!-- Floating Real Verification Pill -->
+              <div class="floating-verification">
+                <div class="verification-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <div class="verification-text">Sterilization Pass #8492</div>
+                  <div class="verification-sub">Class-B Vacuum Cycle Verified</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         METRICS STRIP: Believable Operational Proof Points
+         ========================================================================== -->
+    <section class="metrics-strip">
+      <div class="container">
+        <div class="metrics-grid">
+          
+          <div class="metric-item">
+            <div class="metric-number">1,840+</div>
+            <div class="metric-title">Single-Visit Root Canals</div>
+            <p class="metric-desc">Completed with rotary apex locator precision and 98.9% 5-year retention rate.</p>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-number">0 Dread</div>
+            <div class="metric-title">STA Computerized Anesthesia</div>
+            <p class="metric-desc">Single-tooth precision delivery that eliminates traditional syringe discomfort and lip numbness.</p>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-number">12 Mins</div>
+            <div class="metric-title">Median Chair Wait Time</div>
+            <p class="metric-desc">Strict 15-minute schedule buffers protect your working day from reception room delays.</p>
+          </div>
+
+          <div class="metric-item">
+            <div class="metric-number">100%</div>
+            <div class="metric-title">Sterilization Traceability</div>
+            <p class="metric-desc">Every surgical pouch sealed with physical chemical audit indicators opened at your chairside.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CINEMATIC 3D OPERATORY: FILM SCROLL EXPERIENCE
+         ========================================================================== -->
+    <section class="cinematic-film-section" id="cinematic-3d-viewport">
+      <div class="container">
+        
+        <div class="film-intro-block">
+          <span class="section-tagline" style="background: rgba(38, 133, 115, 0.2); color: #2EE59D; border-color: rgba(46, 229, 157, 0.3);">
+            Interactive 3D Operatory &bull; Film Scroll Engine
+          </span>
+          <h2>A cinematic journey into microscopic oral medicine.</h2>
+          <p>
+            Experience dental anatomy at sub-millimeter precision. Scroll downward to transition through diagnostic optical mapping, endodontic canal preservation, and monolithic ceramic restoration.
+          </p>
+        </div>
+
+        <!-- Anamorphic Letterboxed Frame -->
+        <div class="film-viewport-frame">
+          
+          <!-- Top Film Letterbox Strip -->
+          <div class="film-letterbox-bar">
+            <div class="film-rec-indicator">
+              <span class="rec-blinking-dot"></span>
+              <span>LIVE OPERATORY TELEMETRY</span>
+            </div>
+            <div class="film-timecode-display">
+              <span id="film-scene-indicator">ACT I // ENAMEL BIOMIMETICS</span> &bull; 
+              <span id="film-timecode">TC 00:00:14:08</span>
+            </div>
+            <div class="film-aspect-ratio-badge">
+              2.39:1 CINEMATIC SCOPE &bull; 60 FPS WEBGL
+            </div>
+          </div>
+
+          <!-- 3D Interactive Canvas Stage -->
+          <div class="film-canvas-stage">
+            <div id="cinema-3d-canvas-box"></div>
+
+            <!-- Left HUD Chapter Markers -->
+            <div class="film-hud-chapters">
+              <div class="film-chapter-step active">
+                <span class="chapter-pip"></span>
+                <span>01 // NATURAL ENAMEL</span>
+              </div>
+              <div class="film-chapter-step">
+                <span class="chapter-pip"></span>
+                <span>02 // 3D OPTICAL SCAN</span>
+              </div>
+              <div class="film-chapter-step">
+                <span class="chapter-pip"></span>
+                <span>03 // CANAL PRESERVATION</span>
+              </div>
+              <div class="film-chapter-step">
+                <span class="chapter-pip"></span>
+                <span>04 // PRECISION RESTORATION</span>
+              </div>
+            </div>
+
+            <!-- Right HUD Telemetry Box -->
+            <div class="film-hud-telemetry">
+              <div class="telemetry-row">
+                <span class="k">OPTICAL TOLERANCE:</span>
+                <span class="v">&plusmn;20 &mu;m</span>
+              </div>
+              <div class="telemetry-row">
+                <span class="k">SCAN SPEED:</span>
+                <span class="v">1,000,000 pts/s</span>
+              </div>
+              <div class="telemetry-row">
+                <span class="k">FLEXURAL DENSITY:</span>
+                <span class="v">500 MPa</span>
+              </div>
+              <div class="telemetry-row">
+                <span class="k">SPECTRUM:</span>
+                <span class="v">470 nm Blue Light</span>
+              </div>
+            </div>
+
+            <!-- Center Drag Helper Pill -->
+            <div class="film-drag-hint">
+              <svg class="drag-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
+              </svg>
+              <span>360&deg; Drag to Orbit Anatomical Model</span>
+            </div>
+
+          </div>
+
+          <!-- Bottom Controls & Soundscape Bar -->
+          <div class="film-controls-bar">
+            <div class="film-mode-buttons">
+              <button type="button" class="mode-btn active" data-mode="natural">Natural Ceramic</button>
+              <button type="button" class="mode-btn" data-mode="wireframe">3D Laser Mesh</button>
+              <button type="button" class="mode-btn" data-mode="xray">X-Ray Pulp Canal</button>
+              <button type="button" class="mode-btn" data-mode="implant">Guided Implant</button>
+              <button type="button" class="mode-btn" data-mode="explode">Explode Layers</button>
+            </div>
+
+            <div>
+              <button type="button" class="cinema-audio-toggle" style="background: rgba(255,255,255,0.08); border-color: var(--color-border-dark); color: #B2CCC6;">
+                <span class="audio-wave-bars is-muted"><i></i><i></i><i></i><i></i></span>
+                <span>Audio Ambience: OFF</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ASYMMETRIC VALUE BREAKDOWN (BLOCK A): THE MAYRA PRECISION PROTOCOL
+         ========================================================================== -->
+    <section class="protocol-section section-padding">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tagline">Clinical Infrastructure</span>
+          <h2 class="section-title">The Mayra Precision Protocol</h2>
+          <p class="section-description" style="max-width: 620px;">
+            We replaced outdated dental techniques with hospital-grade diagnostics and computer-guided comfort protocols. Explore how we manage your clinical safety.
+          </p>
+        </div>
+
+        <div class="protocol-tabs-wrapper" data-tabs="protocol">
+          
+          <!-- Interactive Protocol Navigation Tabs -->
+          <div class="protocol-nav-list" role="tablist">
+            <button type="button" class="protocol-tab-btn active" data-tab-target="anesthesia" role="tab" aria-selected="true">
+              <span class="tab-number">PROTOCOL 01</span>
+              <span class="tab-heading">Computer-Delivered Painless Anesthesia</span>
+              <span class="tab-sub">Single-tooth numbing without syringe dread</span>
+            </button>
+
+            <button type="button" class="protocol-tab-btn" data-tab-target="diagnostics" role="tab" aria-selected="false">
+              <span class="tab-number">PROTOCOL 02</span>
+              <span class="tab-heading">3D Digital Intraoral &amp; CBCT Scanning</span>
+              <span class="tab-sub">Zero impression trays &bull; 20-micron margin clarity</span>
+            </button>
+
+            <button type="button" class="protocol-tab-btn" data-tab-target="sterilization" role="tab" aria-selected="false">
+              <span class="tab-number">PROTOCOL 03</span>
+              <span class="tab-heading">Class-B Pre-Vacuum Autoclave Cycle</span>
+              <span class="tab-sub">Chemical indicator pouches opened at chairside</span>
+            </button>
+          </div>
+
+          <!-- Protocol Panels Content -->
+          <div class="protocol-panels-container">
+            
+            <!-- Panel 1: Anesthesia -->
+            <div class="protocol-panel is-active" data-tab-group="protocol" data-tab-panel="anesthesia">
+              <div class="protocol-panel-header">
+                <div>
+                  <h3 style="font-size: 1.25rem;">Milestone Scientific STA Wand Technology</h3>
+                  <p style="font-size: 0.8125rem; color: var(--color-text-subtle);">Targeted Single-Tooth Anesthesia Protocol</p>
+                </div>
+                <span class="protocol-badge">Microprocessor Regulated</span>
+              </div>
+
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+                Most dental injection pain is caused by the sudden pressure of anesthetic fluid into dense tissue, not the needle puncture. Our computer-controlled STA system monitors tissue resistance 50 times per second, delivering local anesthetic below the patient's pain sensation threshold.
+              </p>
+
+              <div class="protocol-specs-list">
+                <div class="spec-card">
+                  <div class="spec-title">No Drooping Lip or Tongue</div>
+                  <div class="spec-desc">Anesthesia is isolated precisely to the periodontal ligament of the single target tooth, leaving your facial muscles fully functional.</div>
+                </div>
+                <div class="spec-card">
+                  <div class="spec-title">Immediate Post-Op Function</div>
+                  <div class="spec-desc">You can speak clearly and return directly to conference meetings immediately following restorative appointments.</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; justify-content: space-between; padding-top: var(--space-4); border-top: 1px solid var(--color-border-subtle);">
+                <span class="mono" style="font-size: 0.75rem; color: var(--color-text-subtle);">Standard on all root canals, crowns, and surgical fillings</span>
+                <a href="services.html#root-canal" class="btn btn-ghost btn-sm">Explore Root Canal Therapy &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Panel 2: Diagnostics -->
+            <div class="protocol-panel" data-tab-group="protocol" data-tab-panel="diagnostics" style="display: none;">
+              <div class="protocol-panel-header">
+                <div>
+                  <h3 style="font-size: 1.25rem;">Dentsply Sirona Primescan 3D System</h3>
+                  <p style="font-size: 0.8125rem; color: var(--color-text-subtle);">High-Frequency Smart Pixel Optical Sensors</p>
+                </div>
+                <span class="protocol-badge">1,000,000+ 3D Points/Sec</span>
+              </div>
+
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+                We have eliminated gag-inducing alginate impression trays completely. Our handheld wand captures true-color, photorealistic 3D models of your dental arches within 4 minutes, allowing immediate chairside review of bite dynamics, micro-fractures, and interproximal decay.
+              </p>
+
+              <div class="protocol-specs-list">
+                <div class="spec-card">
+                  <div class="spec-title">Sub-Millimeter Margin Fits</div>
+                  <div class="spec-desc">Porcelain crowns and zirconia veneers fabricated from digital files seat with zero chairside re-drilling or loose margins.</div>
+                </div>
+                <div class="spec-card">
+                  <div class="spec-title">Low-Dose Digital CBCT</div>
+                  <div class="spec-desc">Bone volume, nerve canals, and sinus floors mapped with up to 75% lower radiation than conventional medical CT scanners.</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; justify-content: space-between; padding-top: var(--space-4); border-top: 1px solid var(--color-border-subtle);">
+                <span class="mono" style="font-size: 0.75rem; color: var(--color-text-subtle);">Included in all comprehensive new-patient evaluations</span>
+                <a href="services.html#diagnostics" class="btn btn-ghost btn-sm">Explore Digital Diagnostics &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Panel 3: Sterilization -->
+            <div class="protocol-panel" data-tab-group="protocol" data-tab-panel="sterilization" style="display: none;">
+              <div class="protocol-panel-header">
+                <div>
+                  <h3 style="font-size: 1.25rem;">Melag European Class-B Sterilization</h3>
+                  <p style="font-size: 0.8125rem; color: var(--color-text-subtle);">Triple Fractionated Pre-Vacuum Thermal Sterilization</p>
+                </div>
+                <span class="protocol-badge">EN 13060 Standard</span>
+              </div>
+
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+                Ordinary clinic autoclaves cannot guarantee steam penetration into the microscopic hollow lumens of dental handpieces. Our European Class-B vacuum cycles exhaust air completely prior to steam injection, guaranteeing absolute eradication of all bacterial spores and viruses.
+              </p>
+
+              <div class="protocol-specs-list">
+                <div class="spec-card">
+                  <div class="spec-title">Chairside Seal Unpacking</div>
+                  <div class="spec-desc">Every surgical kit is sealed in medical-grade transparent barrier film and unsealed in your presence before treatment starts.</div>
+                </div>
+                <div class="spec-card">
+                  <div class="spec-title">Chemical Verification Strips</div>
+                  <div class="spec-desc">Visual color-shift indicators physically confirm that 134&deg;C core temperature and pressure parameters were met.</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; justify-content: space-between; padding-top: var(--space-4); border-top: 1px solid var(--color-border-subtle);">
+                <span class="mono" style="font-size: 0.75rem; color: var(--color-text-subtle);">Audit logs archived digitally for every procedure</span>
+                <a href="about.html#sterilization" class="btn btn-ghost btn-sm">Read About Sterilization &rarr;</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ASYMMETRIC VALUE BREAKDOWN (BLOCK B): 2-COLUMN COMPARISON
+         ========================================================================== -->
+    <section class="comparison-section section-padding">
+      <div class="container">
+        
+        <div class="section-header section-header--center">
+          <span class="section-tagline">Clinical Standards Comparison</span>
+          <h2 class="section-title">The Industry Reality vs. The Mayra Standard</h2>
+          <p class="section-description">
+            We built this practice to systematically address the specific pain points and opaque practices that make patients avoid the dentist.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          
+          <!-- Column 1: Traditional Clinics -->
+          <div class="comparison-card comparison-card--traditional">
+            <span class="comparison-card-badge">Common Industry Practice</span>
+            <h3 class="comparison-card-title" style="color: var(--color-danger);">Conventional Dental Care</h3>
+            
+            <div class="comparison-items-list">
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                <p><strong>Unpredictable Chairside Billing:</strong> You receive an initial estimate, only to have unplanned fees for bone grafting, special burs, or dressings added to the bill while your mouth is numb.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                <p><strong>Intimidating Syringe Injections:</strong> Manual manual plungers cause sudden painful tissue distension, followed by 4 hours of total half-face muscle numbness.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                <p><strong>Multiple Root Canal Visits:</strong> 3 to 4 appointments required for a single tooth because of outdated manual hand files and lack of electronic apex locators.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                <p><strong>Gag-Inducing Impression Putty:</strong> Cold, gooey chemical trays that trigger gag reflexes and often warp during postal transit to external labs.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                <p><strong>Rotating Junior Doctors:</strong> You consult one doctor on your first visit, but a different trainee operates on your crown or root canal the following week.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: The Mayra Standard -->
+          <div class="comparison-card comparison-card--mayra">
+            <span class="comparison-card-badge">Our Operational Protocol</span>
+            <h3 class="comparison-card-title">The Mayra Dental Care Standard</h3>
+            
+            <div class="comparison-items-list">
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <p><strong>Printed Itemized Guarantee:</strong> Every treatment plan is printed with transparent lab costs, material grades, and written warranty before treatment starts. Zero surprise fees.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <p><strong>Computer-Controlled STA Wand:</strong> Microprocessor anesthetic injection delivers pin-point comfort at the single-tooth level without drooping lips or facial paralysis.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <p><strong>Single-Sitting Rotary Endodontics:</strong> Over 98% of root canal treatments completed in a single 60-minute session with continuous apical verification.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <p><strong>100% Optical 3D Intraoral Scanning:</strong> Sub-millimeter digital files sent directly to CAD/CAM milling units for exact anatomical margins on crowns and aligners.</p>
+              </div>
+
+              <div class="comparison-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <p><strong>Continuous Lead Specialist Care:</strong> Your entire diagnosis, surgery, and follow-up are handled by your assigned MDS specialist from start to finish.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEEP-DIVE CLINICAL CASE STUDY & VERIFIED PATIENT OUTCOME
+         ========================================================================== -->
+    <section class="case-study-section section-padding">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tagline">Clinical Evidence &bull; Case Record #CR-4412</span>
+          <h2 class="section-title">Restoring Function for a Phobic Patient</h2>
+          <p class="section-description" style="max-width: 680px;">
+            Measured before-and-after clinical outcome for a patient who avoided restorative dental care for six years following traumatic childhood extractions.
+          </p>
+        </div>
+
+        <div class="case-study-card">
+          
+          <div class="case-study-left">
+            <div>
+              <span class="badge badge-teal" style="margin-bottom: var(--space-4);">Molar Preservation &amp; Occlusal Rehabilitation</span>
+              <p class="case-quote">
+                For six years I avoided dental clinics because every dentist I visited brought out large syringe needles. Dr. Mayra used a computerized wand that I genuinely did not feel, and explained the tooth scan on a screen before touching any drill. The final bill matched the initial quote to the single rupee.
+              </p>
+            </div>
+
+            <div class="patient-profile">
+              <div class="patient-avatar">AM</div>
+              <div class="patient-info">
+                <h5>Anand Mathur, 44</h5>
+                <p>Principal Architect, Golf Course Extension, Gurugram</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study-right">
+            <h4 style="font-size: 1.15rem; margin-bottom: var(--space-3);">Case Breakdown &amp; Protocol Executed</h4>
+            
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+              <strong>Initial Presentation:</strong> Severe nocturnal bruxism, cracked lower first molar (#46) with irreversible pulpitis, acute masticatory sensitivity, and high anxiety score (MDAS 18/25).
+            </p>
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6; margin-top: 8px;">
+              <strong>Clinical Solution:</strong> STA computerized local anesthesia, single-visit rotary endodontic therapy under high-magnification dental loupes, digital 3D optical impression, and same-week monolithic zirconia crown seating with custom night guard.
+            </p>
+
+            <div class="case-metrics-grid">
+              <div class="case-metric-box">
+                <div class="number">68 Mins</div>
+                <div class="label">Total chair time across 2 visits</div>
+              </div>
+              <div class="case-metric-box">
+                <div class="number">0/10</div>
+                <div class="label">Reported post-procedure pain score</div>
+              </div>
+              <div class="case-metric-box">
+                <div class="number">100%</div>
+                <div class="label">Chewing bite force restored</div>
+              </div>
+              <div class="case-metric-box">
+                <div class="number">18 Mos</div>
+                <div class="label">Follow-up: Zero marginal leakage</div>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--space-6);">
+              <a href="about.html#doctors" class="btn btn-secondary btn-sm">
+                Meet Dr. Mayra &amp; The Clinical Team &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRE-FOOTER CONVERSION SECTION
+         ========================================================================== -->
+    <section class="conversion-banner">
+      <div class="container">
+        <div class="banner-content">
+          <span class="section-tagline" style="background: rgba(255,255,255,0.12); color: #FFFFFF; border-color: rgba(255,255,255,0.2);">Prompt Care Available</span>
+          <h2>Experiencing dental pain or overdue for a comprehensive check-up?</h2>
+          <p>
+            Schedule a 45-minute clinical consultation. Your visit includes high-definition digital X-rays, intraoral camera photography, and an itemized printed diagnosis with zero obligation.
+          </p>
+
+          <div class="banner-actions">
+            <a href="contact.html#book" class="btn btn-accent btn-lg" style="color: #FFFFFF;">
+              <span>Reserve Your Consultation Slot</span>
+              <span class="btn-icon-wrapper">&rarr;</span>
+            </a>
+            <a href="tel:+919810234421" class="btn btn-secondary btn-lg" style="background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,0.3);">
+              <span>Direct Emergency Desk: +91 98102 34421</span>
+            </a>
+          </div>
+
+          <div class="banner-subtext">
+            <span>Sector 42, Golf Course Road &bull; Valet parking available &bull; Wheelchair accessible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       GLOBAL FOOTER (Loaded via Component Architecture)
+       ========================================================================== -->
+  <div data-component="footer" data-loaded="true">
+    <footer class="site-footer" id="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo" aria-label="Mayra Dental Care Home">
+              <div class="logo-symbol" style="background-color: var(--color-brand-secondary);">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 3C11 3 6 6.5 6 12C6 16.5 8.5 21 11.5 26.5C12.5 28.5 14 29 15 26.5L16 23.5L17 26.5C18 29 19.5 28.5 20.5 26.5C23.5 21 26 16.5 26 12C26 6.5 21 3 16 3Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                  <path d="M16 9V17M12 13H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name" style="color: #FFFFFF;">Mayra Dental Care</span>
+                <span class="logo-tagline" style="color: #9BB8B1;">Licensed Oral Healthcare Facility</span>
+              </div>
+            </a>
+            <p class="footer-brand-bio">
+              Precision dental medicine founded on three non-negotiables: zero syringe discomfort, 3D digital diagnosis without guesswork, and printed itemized pricing before you recline in the chair.
+            </p>
+            <div class="footer-compliance-strip">
+              <span class="compliance-tag"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Haryana Dental Council Reg. #HDC-D-4482</span>
+              <span class="compliance-tag"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>Hospital-Grade Class-B Pre-Vacuum Autoclave Protocol</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-column-title">Clinical Solutions</h4>
+            <ul class="footer-links-list">
+              <li><a href="services.html#root-canal" class="footer-link">Single-Visit Rotary Root Canal</a></li>
+              <li><a href="services.html#implants" class="footer-link">3D Guided Dental Implants</a></li>
+              <li><a href="services.html#aligners" class="footer-link">Digital Clear Aligners</a></li>
+              <li><a href="services.html#veneers" class="footer-link">Porcelain &amp; Ceramic Veneers</a></li>
+              <li><a href="services.html#preventive" class="footer-link">Ultrasonic Piezo Prophylaxis</a></li>
+              <li><a href="services.html#pediatric" class="footer-link">Gentle Pediatric Dentistry</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-column-title">Patient Resources</h4>
+            <ul class="footer-links-list">
+              <li><a href="about.html#doctors" class="footer-link">Specialist Medical Team</a></li>
+              <li><a href="pricing.html#rate-card" class="footer-link">Transparent Price Schedule</a></li>
+              <li><a href="pricing.html#faq" class="footer-link">Insurance &amp; Reimbursement FAQ</a></li>
+              <li><a href="contact.html#emergency" class="footer-link">Emergency Dental Protocol</a></li>
+              <li><a href="contact.html#location" class="footer-link">Clinic Directions &amp; Parking</a></li>
+              <li><a href="about.html#sterilization" class="footer-link">Autoclave Sterilization Audit</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-column-title">Appointments &amp; Inquiries</h4>
+            <div class="footer-triage-box">
+              <div class="triage-title">Direct Clinical Desk</div>
+              <p class="triage-desc">Appointments scheduled with 15-minute buffer windows to preserve zero-wait standards.</p>
+              <div style="font-size: var(--font-size-sm); color: #FFFFFF; font-weight: 600;">
+                <a href="tel:+919810234421" style="color: #FFFFFF; text-decoration: underline;">+91 98102 34421</a>
+              </div>
+              <p class="triage-desc" style="margin-top: 4px;">
+                Email inquiries replied within 2 business hours: <br>
+                <a href="mailto:care@mayradental.com" style="color: var(--color-brand-secondary-soft);">care@mayradental.com</a>
+              </p>
+              <form class="footer-newsletter-form" id="newsletter-form" novalidate>
+                <input type="email" class="footer-input" id="newsletter-email" placeholder="Your email for checkup reminders" aria-label="Email address" required>
+                <button type="submit" class="btn btn-secondary btn-sm" style="background: var(--color-brand-secondary); color: #FFFFFF; border: none;">Subscribe</button>
+              </form>
+              <div id="newsletter-feedback" class="mono" style="font-size: 0.75rem; color: #7FD7BE; display: none;"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <span>&copy; 2026 Mayra Dental Care Private Limited. All rights reserved.</span>
+            <span class="footer-status-indicator">
+              <span class="status-dot"></span>
+              <span>Open Today &bull; Accepting Consultations</span>
+            </span>
+          </div>
+          <div class="footer-legal-links">
+            <a href="contact.html">Patient Rights</a>
+            <a href="pricing.html#terms">Transparent Billing Terms</a>
+            <a href="contact.html">HIPAA &amp; Digital Health Privacy</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  <!-- Global Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/cinema-3d.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* ==========================================================================
+   MAYRA DENTAL CARE — DESIGN SYSTEM TOKENS (VARIABLES.CSS)
+   Human-Crafted Dental Medicine Architecture & Aesthetic Palette
+   ========================================================================== */
+
+:root {
+  /* --- COLOR SYSTEM: Canvas & Surfaces --- */
+  --color-canvas: #FAFAF7;             /* Warm clinical porcelain canvas */
+  --color-canvas-alt: #F1F5F3;         /* Soft eucalyptus-tinted section background */
+  --color-canvas-subtle: #E9EFEA;      /* Deeper contrast divider background */
+  --color-surface: #FFFFFF;            /* Pure card surface */
+  --color-surface-hover: #F8FBF9;      /* Subtle interactive hover surface */
+  --color-surface-accent: #E8F2EE;     /* Mint-tinted callout surface */
+  --color-surface-dark: #0D2622;       /* Editorial deep jade slate surface */
+  --color-surface-dark-card: #15342F;  /* Dark card container */
+
+  /* --- COLOR SYSTEM: Brand Primary (Deep Surgical Teal) --- */
+  --color-brand-primary: #0A4A45;       /* Core clinical authority teal */
+  --color-brand-primary-hover: #063531; /* Deeper hover tone */
+  --color-brand-primary-active: #042724;
+  --color-brand-primary-subtle: #EDF5F2;/* Super light teal tint */
+
+  /* --- COLOR SYSTEM: Brand Secondary (Therapeutic Mint & Sage) --- */
+  --color-brand-secondary: #268573;     /* Soothing therapeutic green */
+  --color-brand-secondary-hover: #1E6E5F;
+  --color-brand-secondary-soft: #DCEFEA;
+
+  /* --- COLOR SYSTEM: Accent (Warm Restorative Sand / Champagne Gold) --- */
+  --color-brand-accent: #BD8E44;        /* Restorative warmth & certification seal */
+  --color-brand-accent-hover: #A67B34;
+  --color-brand-accent-soft: #F9F4EB;
+
+  /* --- COLOR SYSTEM: Typography & Text Hierarchy --- */
+  --color-text-primary: #12221F;        /* Deep obsidian pine (high contrast) */
+  --color-text-secondary: #4A5F5A;      /* Clear, legible explanatory gray-teal */
+  --color-text-subtle: #738984;         /* Micro-labels, meta data, and timestamps */
+  --color-text-inverse: #FFFFFF;        /* For dark containers */
+  --color-text-inverse-muted: #B2CCC6;  /* For secondary text on dark containers */
+
+  /* --- COLOR SYSTEM: Borders & Structural Dividers --- */
+  --color-border-subtle: #E3EDE8;       /* Subtle card border */
+  --color-border-medium: #CCDDD5;       /* Focus ring / interactive boundary */
+  --color-border-strong: #9CB8AC;       /* Active state indicator */
+  --color-border-dark: #22433D;         /* Border on dark background */
+
+  /* --- COLOR SYSTEM: Functional & Feedback States --- */
+  --color-success: #198054;
+  --color-success-bg: #E8F7F0;
+  --color-success-border: #B2E3CE;
+  --color-warning: #B37418;
+  --color-warning-bg: #FEF7EC;
+  --color-danger: #BA3333;
+  --color-danger-bg: #FDF1F1;
+  --color-danger-border: #F6C1C1;
+  --color-info: #1B6E96;
+  --color-info-bg: #EDF6FA;
+
+  /* --- TYPOGRAPHY SCALE --- */
+  --font-family-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'SF Mono', Consolas, Monaco, monospace;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 1.875rem;  /* 30px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3rem;      /* 48px */
+  --font-size-5xl: 3.75rem;   /* 60px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.3;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+  --line-height-loose: 1.8;
+
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-snug: -0.015em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-wider: 0.08em;
+
+  /* --- SPACING TOKENS --- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* --- CONTAINER DIMENSIONS --- */
+  --container-max: 1240px;
+  --container-narrow: 940px;
+  --container-reading: 720px;
+  --container-padding: 1.5rem;
+
+  /* --- BORDER RADII --- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 9999px;
+
+  /* --- LAYERED REALISTIC SHADOWS --- */
+  --shadow-subtle: 0 1px 2px rgba(10, 74, 69, 0.04), 0 2px 4px rgba(10, 74, 69, 0.02);
+  --shadow-card: 0 4px 16px -2px rgba(10, 74, 69, 0.06), 0 1px 3px rgba(10, 74, 69, 0.04);
+  --shadow-floating: 0 12px 32px -4px rgba(10, 74, 69, 0.08), 0 4px 12px -2px rgba(10, 74, 69, 0.04);
+  --shadow-overlay: 0 24px 48px -12px rgba(10, 38, 34, 0.22);
+
+  /* --- TRANSITIONS --- */
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 360ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- ELEVATION Z-INDEX --- */
+  --z-background: -1;
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-drawer: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
